@@ -1,12 +1,37 @@
-html {
-    font-size: 10px;
-}
-div {
-    font-size: 10em;
-}
 h1 {
-    color:#ff00d4;
+    color:#a200ff;
     font-size: 3rem;
     background-color: aquamarine;
-    width: 20%;
+    /*border: 9px dotted gray;*/
+    border-width: 9px;
+    border-style: dotted;
+    border-color: gray;
+    width: 50%;
+}
+h2 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight:bold;
+   text-align: center;
+   border: 3px solid blue;
+   width: 50%;
+}
+p {
+    background-color: black;
+    color: white;
+}
+span {
+    font-size: 40px;
+    font-family: "comic sans MS";
+    color:yellow;
+    text-decoration: underline;
+    text-transform:uppercase;
+}
+ul {
+    font-size: 50px;
+    list-style: square;
+}
+ol {
+    font-size: 50px;
+    list-style:upper-latin;
+    margin-left: 40px;
 }
