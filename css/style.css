@@ -64,3 +64,58 @@ h1 {
     /*1-0-0-1*/
     /* color: blue !important; */
 }
+
+.titulo-generico {
+    font-size: 40px;
+    color: red;
+}
+
+/*.container-exemplo .titulo-generico {*/
+    /*font-size: 80px;*/
+    /*color: black;*/
+    /*}*/
+    
+.container-exemplo > .titulo-generico {
+    font-size: 80px;
+    color: black;
+}
+
+.meu-link {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.meu-link:hover {
+    font-size: 40px;
+    text-decoration: underline;
+    background-color: gray;
+}
+
+.meu-link:link {
+    color: green;
+}
+
+.meu-link:visited {
+    color:#C86D04
+} 
+
+.meu-link:active {
+    font-size: 60px;
+    color: red;
+}
+
+.meu-link:focus {
+    font-size: 90px;
+    color: purple;
+}
+
+.meu-input {
+    background-color: grey;
+    font-size: 50px;
+    color: white;
+}
+
+.meu-input:focus {
+    background-color: white;
+    color: black;
+}
