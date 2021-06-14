@@ -9,13 +9,7 @@ p {
     background-color: black;
     color: white;
 }
-span {
-    font-size: 40px;
-    font-family: "comic sans MS";
-    color:yellow;
-    text-decoration: underline;
-    text-transform:uppercase;
-}
+
 ul {
     font-size: 50px;
     list-style: square;
@@ -130,10 +124,19 @@ h1 {
     list-style: none;
 }
 
-.menu-item {
+/*.menu-item {
     border: 2px dashed purple;
     background-color: gray;
     margin-bottom: 20px; 
+}*/
+
+.menu-item {
+    border: 2px dashed purple;
+    background-color: gray;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 30px; 
+    min-width: 200px;
 }
 
 .menu-item:last-child {
@@ -151,3 +154,48 @@ h1 {
 .menu-item:nth-child(n + 2) {
     font-weight: bold;
 }
+
+.bloco-inicial {
+    font-size: 50px;
+    background-color: #c86D04;
+    display: block;
+    margin-bottom: 20px;
+    display: block; /* por padrão div é block */
+    width: 500px;
+}
+
+/*.span-inicial {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:yellow;
+    text-decoration: underline;
+    text-transform:uppercase;
+    display: inline; (por padrão span é inline)
+    width: 500px; (ignorado por elemento inline)
+    height: 500px; (ignorado por elemento inline)
+    margin-top: 5000px; (não faz diferença-vertical)
+    margin-left: 40px; (aplicada-horizontal)
+}*/
+/* elementos que são por default inline
+<span>
+<a>
+<strong>
+<em> */
+
+/*display inline-block:*/
+    .span-inicial {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:yellow;
+    text-decoration: underline;
+    text-transform:uppercase;
+    display: inline-block; (passa a aplicar vertical tbém)
+    width: 200px (passa a funcionar)
+    height: 50px; (passa a funcionar)
+    background-color: #768076
+    }
+
+    .bloco-escondido {
+        display: none; /*desaparece da tela*/
+        /*display: block; volta prá tela*/
+    }
